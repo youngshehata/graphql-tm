@@ -1,0 +1,19 @@
+meta {
+  name: Delete Project
+  type: graphql
+  seq: 2
+}
+
+post {
+  url: http://localhost:5000/graphql
+  body: graphql
+  auth: none
+}
+
+body:graphql {
+  mutation{
+    deleteProject(id:"674ca34af76709b1a63a0c05"){
+      name
+    }
+  }
+}

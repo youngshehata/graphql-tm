@@ -1,0 +1,20 @@
+meta {
+  name: Update Project
+  type: graphql
+  seq: 3
+}
+
+post {
+  url: http://localhost:5000/graphql
+  body: graphql
+  auth: none
+}
+
+body:graphql {
+  mutation {
+    updateProject(id: "674c954f5c3f6354e36c4a2d", name: "P1 Modified",description:"Completed") {
+      name
+    }
+  }
+  
+}
